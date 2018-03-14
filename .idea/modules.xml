@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CrimeIntent.iml" filepath="$PROJECT_DIR$/CrimeIntent.iml" />
-      <module fileurl="file://C:\Users\dkmngkfj\Downloads\Just-Java-master\CrimeIntent\CrimeIntent.iml" filepath="C:\Users\dkmngkfj\Downloads\Just-Java-master\CrimeIntent\CrimeIntent.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\dkmngkfj\Downloads\Just-Java-master\CrimeIntent\app\app.iml" filepath="C:\Users\dkmngkfj\Downloads\Just-Java-master\CrimeIntent\app\app.iml" />
     </modules>
   </component>
 </project>
