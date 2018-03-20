@@ -1,10 +1,13 @@
 package biz.httpsoftmobile.crimeintent;
 
 import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+
+import biz.httpsoftmobile.crimeintent.database.CrimeBaseHelper;
 
 /**
  * Created by PC on 3/11/2018.
@@ -15,6 +18,9 @@ public class CrimeLab {
 
     private  static CrimeLab sCrimeLab;
     private List<Crime> mCrimes;
+    private Context mContext;
+    private SQLiteDatabase mDatabase;
+
 
     public static CrimeLab get(Context context){
         if(sCrimeLab == null)
@@ -25,6 +31,8 @@ public class CrimeLab {
     }
 
     private CrimeLab(Context context){
+        mContext = context.getApplicationContext();
+        mDatabase = new CrimeBaseHelper(mContext).getWritableDatabase();
         mCrimes = new ArrayList<>();
     }
 
