@@ -29,7 +29,6 @@ public class CrimeBaseHelper extends SQLiteOpenHelper {
                 CrimeTable.Cols.DATE + ", " +
                 CrimeTable.Cols.SOLVED +
                 ")");
-
     }
 
     @Override
